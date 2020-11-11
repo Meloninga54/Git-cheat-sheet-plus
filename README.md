@@ -1,6 +1,6 @@
 # A few things I had to figure out:
 
-## Pulling any changes to a repository that you forked from:
+## 1. Pulling any changes to a repository that you forked from:
 
 From [this](https://stackoverflow.com/a/7244456/) answer on stackoverflow:
 
@@ -22,3 +22,18 @@ From [this](https://stackoverflow.com/a/7244456/) answer on stackoverflow:
 
 **Note:** the update is local, after this you'll have to push to the forked repository on github.
 
+## 2. Permanently delete commits from repository:
+
+From [here](https://gist.github.com/dsci/1347672):
+
+- First, check out the commit you wish to go back to (get sha-1[commit ID] from git log)
+`git reset --hard 9d3c3a0caa7f7b35ef15adb96fc80fcbb59ac72a`
+
+- Then do a forced update.
+`git push origin +9d3c3a0caa7f7b35ef15adb96fc80fcbb59ac72a^:develop`
+
+- Push specific commit
+`git push origin 9d3c3a0caa7f7b35ef15adb96fc80fcbb59ac72a:develop`
+
+
+*Check out a much lazier .txt version of this document [here](git_hacks.txt)  
