@@ -4,8 +4,8 @@ The godly github commands (catch up with upstream):
  git checkout main
  git rebase upstream/main
 
-Delete commits from repository:
 
+Delete commits from repository:
 gistfile1.sh
 # First, check out the commit you wish to go back to (get sha-1 from git log)
 git reset --hard 9d3c3a0caa7f7b35ef15adb96fc80fcbb59ac72a
